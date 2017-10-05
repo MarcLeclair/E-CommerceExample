@@ -15,59 +15,17 @@ export  class TelevisionSet extends Electronic{
         this.type = type;
     }
 
-    private setDimensions(dimensions: string) {
-        this.dimensions = dimensions;
-    }
+    private setDimensions(dimensions: string) {this.dimensions = dimensions; }
 
-    private setType(type : string) {
-        this.type = type;
-    }
+    private setType(type : string) { this.type = type; }
 
-    private setId(id :string) {
-        this.id = id;
-    }
 
-    private setWeight(weight: number) {
-        this.weight = weight;
-    }
 
-    private setModelNumber(modelNumber : string) {
-        this.modelNumber = modelNumber;
-    }
+    getDimension() : string {return this.dimensions; }
 
-    private setBrand(brand: string) {
-        this.brand = brand;
-    }
-    private setPrice(price: number) {
-        this.price = price;
-    }
+    getType(): string{   return this.type; }
 
-    getDimension() : string {
-        return this.dimensions;
-    }
-
-    getType(): string{
-        return this.type;
-    }
-
-    getId() : string {
-        return this.id;
-    }
-
-    getWeight() : number {
-        return this.weight;
-    }
-
-    getModelNumber() : string {
-        return this.modelNumber;
-    }
-
-    getBrand() : string {
-        return this.brand;;
-    }
-    getPrice(): number{
-        return this.price;
-    }
+   
 
 
 	//Save Television Set onto database

@@ -17,15 +17,15 @@ export abstract class ComputerSystem extends Electronic {
     }
     abstract save(): boolean;
 
-    protected abstract getProcessor(): string;
-    protected abstract getRam(): number;
-    protected abstract getCpus(): number;
-    protected abstract getHardDrive(): number;
-    protected abstract getOs(): string;
+    protected getProcessor(): string { return this.processor;}
+    protected getRam(): number { return this.ram;}
+    protected getCpus(): number { return this.cpus; }
+    protected getHardDrive(): number { return this.hardDrive;}
+    protected getOs(): string { return this.os;}
 
-    protected abstract setProcessor(processor: string);
-    protected abstract setRam(ram: number);
-    protected abstract setCpus(cpus: number);
-    protected abstract setHardDrive(hardDrive: number);
-    protected abstract setOs(os: string);
+    protected setProcessor(processor: string): void { this.processor = processor;}
+    protected setRam(ram: number): void { this.ram = ram; }
+    protected setCpus(cpus: number): void { this.cpus = cpus; }
+    protected setHardDrive(hardDrive: number): void { this.hardDrive = hardDrive; }
+    protected setOs(os: string): void { this.os = os; }
 }
